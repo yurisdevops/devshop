@@ -29,10 +29,10 @@ export function Cart() {
         {cart.map((cart) => (
           <section
             key={cart.id}
-            className="flex items-center justify-between border-b-2 border-gray-300 flex-col gap-2 lg:flex-row"
+            className="flex items-center justify-between border-b-2 mb-5 border-gray-300 flex-col gap-2 lg:flex-row"
           >
             <img
-              className="w-28 md:float-left"
+              className="w-20 mb-2 md:float-left"
               src={cart.image}
               alt={cart.description}
             />
