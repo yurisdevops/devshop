@@ -6,11 +6,16 @@ import toast from "react-hot-toast";
 import { Link } from "react-router-dom";
 
 export interface ProductProps {
+  image: string | undefined;
   id: number;
   title: string;
   price: number;
   description: string;
   cover: string;
+  rating: {
+    rate: number;
+    count: number;
+  };
 }
 
 export function Home() {
@@ -44,17 +49,20 @@ export function Home() {
     <>
       <div>
         <main className="w-full max-w-7xl px-4 mx-auto ">
-          <h1 className="font-bold text-2xl mb-4 mt-10 text-center">
+          <h1 className="font-bold text-2xl mb-10 mt-10 text-center">
             Produtos em alta
           </h1>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols lg:grid-cols-5">
             {products.map((product) => (
-              <section className="w-full " key={product.id}>
+              <section
+                className="w-full justify-center items-center flex flex-col text-center "
+                key={product.id}
+              >
                 <Link to={`/product/${product.id}`}>
                   <img
-                    className="w-full rounded-lg max-h-30 mb-2 hover:scale-105 transition-all "
-                    src={product.cover}
+                    className="w-28 rounded-lg mb-2 hover:scale-105 transition-all "
+                    src={product.image}
                     alt={product.description}
                   />
                 </Link>

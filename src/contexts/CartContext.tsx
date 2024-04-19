@@ -10,6 +10,7 @@ interface CartContextData {
 }
 
 interface CartProps {
+  image: string | undefined;
   id: number;
   title: string;
   price: number;
@@ -17,6 +18,10 @@ interface CartProps {
   cover: string;
   amount: number;
   total: number;
+  rating: {
+    rate: number;
+    count: number;
+}
 }
 
 interface CartProviderProps {

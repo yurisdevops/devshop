@@ -42,8 +42,8 @@ export function Product() {
             <section className="w-full">
               <div className="flex flex-col lg:flex-row">
                 <img
-                  className="flex-1 w-full max-h-72 object-contain"
-                  src={detailItem?.cover}
+                  className="flex-1 w-full max-h-72 p-4 object-contain"
+                  src={detailItem?.image}
                   alt={detailItem?.title}
                 />
 
@@ -52,18 +52,23 @@ export function Product() {
                     {detailItem?.title}
                   </p>
                   <p className="my-4">{detailItem?.description}</p>
-                  <strong className="text-zinc-700/90 text-xl">
-                    {detailItem.price.toLocaleString("pt-BR", {
-                      style: "currency",
-                      currency: "BRL",
-                    })}
-                  </strong>
-                  <button
-                    className="bg-zinc-900 p-1 rounded ml-3"
-                    onClick={() => handleAddItemCart(detailItem)}
-                  >
-                    <BsCartPlus size={20} color="#FFF" />
-                  </button>
+                  <div className="flex flex-col">
+                    <strong>Avaliação: {detailItem.rating.rate}</strong>
+                    <div className="flex mt-2">
+                      <strong className="text-zinc-700/90 text-xl">
+                        {detailItem.price.toLocaleString("pt-BR", {
+                          style: "currency",
+                          currency: "BRL",
+                        })}
+                      </strong>
+                      <button
+                        className="bg-zinc-900 p-1 rounded ml-3 w-7"
+                        onClick={() => handleAddItemCart(detailItem)}
+                      >
+                        <BsCartPlus size={20} color="#FFF" />
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </section>

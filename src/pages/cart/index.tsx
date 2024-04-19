@@ -33,7 +33,7 @@ export function Cart() {
           >
             <img
               className="w-28 md:float-left"
-              src={cart.cover}
+              src={cart.image}
               alt={cart.description}
             />
             <span className="w-7/12 flex text-center justify-center font-medium text-1">
