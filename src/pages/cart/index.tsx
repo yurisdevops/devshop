@@ -72,7 +72,7 @@ export function Cart() {
           </section>
         ))}
         {cart.length !== 0 && (
-          <p className="font-bold text-lg float-right mt-4 md:m-2">Total: {total}</p>
+          <p className="font-bold text-lg float-right mt-4 p-2">Total: {total}</p>
         )}
       </div>
     </>
