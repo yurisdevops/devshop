@@ -51,7 +51,7 @@ export function Product() {
                   <p className="font-bold text-2xl mt-4 mb-2 ">
                     {detailItem?.title}
                   </p>
-                  <p className="my-4">{detailItem?.description}</p>
+                  <p className="my-4 max-w-screen-sm">{detailItem?.description}</p>
                   <div className="flex flex-col">
                     <strong>Avaliação: {detailItem.rating.rate}</strong>
                     <div className="flex mt-2">
