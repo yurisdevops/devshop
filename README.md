@@ -1,30 +1,55 @@
-# React + TypeScript + Vite
+**DevShop**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O DevShop é uma mini loja online que permite aos usuários explorar e adquirir produtos de um catálogo fornecido por uma API externa de ecommerce. Desenvolvida com React, TypeScript, Tailwind CSS e Context API, esta aplicação oferece funcionalidades essenciais para uma experiência de compra intuitiva e interativa.
 
-Currently, two official plugins are available:
+### Funcionalidades Principais
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Adicionar Produtos ao Carrinho:** Os usuários podem adicionar produtos desejados ao carrinho com apenas um clique.
+- **Detalhes do Produto:** É possível visualizar detalhes específicos de cada produto, como descrição, preço e imagens.
+- **Aumentar Quantidade:** Os usuários podem somar mais quantidades dos itens já presentes no carrinho de compras.
+- **Remover Produtos:** Caso desejem, os usuários podem remover produtos do carrinho de compras.
 
-## Expanding the ESLint configuration
+### Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React:** Para construção da interface de usuário dinâmica e reativa.
+- **TypeScript:** Para melhorar a escalabilidade e legibilidade do código.
+- **Tailwind CSS:** Para estilização rápida e responsiva dos componentes.
+- **Context API:** Para gerenciamento de estado global da aplicação.
+- **Outras Bibliotecas do React:** Utilizadas conforme necessário para otimizar o desenvolvimento e implementar funcionalidades específicas.
 
-- Configure the top-level `parserOptions` property like this:
+### Como Usar
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. **Clonar o Repositório:**
+   ```
+   git clone https://github.com/seu-usuario/devshop.git
+   ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. **Instalar Dependências:**
+   ```
+   cd devshop
+   npm install
+   ```
+
+3. **Iniciar o Servidor de Desenvolvimento:**
+   ```
+   npm start
+   ```
+
+4. **Abrir no Navegador:**
+   Acesse a aplicação em seu navegador em [DevShop](https://devshop-seven.vercel.app).
+
+### Demonstração
+
+Uma demonstração ao vivo do projeto pode ser acessada [aqui](URL_DE_DEPLOY).
+
+### Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para enviar problemas ou solicitações de pull para ajudar a melhorar este projeto.
+
+### Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
+
+---
+
+Experimente a conveniência de compras online com o DevShop! Explore nossa variedade de produtos e desfrute de uma experiência de compra sem complicações. 🛒🛍️
