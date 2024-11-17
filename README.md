@@ -38,9 +38,7 @@ O DevShop é uma mini loja online que permite aos usuários explorar e adquirir 
 4. **Abrir no Navegador:**
    Acesse a aplicação em seu navegador em [DevShop](https://devshop-seven.vercel.app).
 
-### Demonstração
 
-Uma demonstração ao vivo do projeto pode ser acessada [aqui](URL_DE_DEPLOY).
 
 ### Contribuição
 
