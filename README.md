@@ -2,7 +2,7 @@
 
 > Uma mini loja online desenvolvida com React, TypeScript e Tailwind CSS.
 
-O **DevShop** é uma aplicação de e-commerce simples que permite aos usuários explorar e adquirir produtos de um catálogo fornecido por uma API externa. Com funcionalidades como adicionar produtos ao carrinho, visualizar detalhes, aumentar a quantidade de itens e remover produtos, o **DevShop** oferece uma experiência de compra intuitiva e eficiente.
+O **DevShop** é uma aplicação de e-commerce simples que permite aos usuários explorar e adquirir produtos de um catálogo fornecido pela API do [FakeStore](https://fakestoreapi.in/). Com funcionalidades como adicionar produtos ao carrinho, visualizar detalhes, aumentar a quantidade de itens e remover produtos, o **DevShop** oferece uma experiência de compra intuitiva e eficiente.
 
 ## Índice
 
@@ -18,7 +18,7 @@ O **DevShop** é uma aplicação de e-commerce simples que permite aos usuários
 
 O **DevShop** é uma mini loja online desenvolvida utilizando **React**, **TypeScript**, **Tailwind CSS** e **Context API**. Ele permite aos usuários:
 
-- Explorar produtos de um catálogo externo.
+- Explorar produtos de um catálogo externo utilizando a API do [FakeStore](https://fakestoreapi.in/).
 - Adicionar e remover itens do carrinho de compras.
 - Visualizar detalhes de cada produto, incluindo descrições, preços e imagens.
 - Ajustar as quantidades dos itens no carrinho conforme desejado.
@@ -38,55 +38,48 @@ A aplicação foi construída de forma simples, com foco na experiência do usu�
 - **TypeScript:** Utilizado para melhorar a escalabilidade e legibilidade do código.
 - **Tailwind CSS:** Biblioteca de estilização utilitária para um design responsivo e personalizável.
 - **Context API:** Gerenciamento de estado global da aplicação.
-- **Outras Bibliotecas:** Outras dependências do React foram utilizadas para otimizar a experiência de desenvolvimento.
+- **API do FakeStore:** Consumo de dados de produtos para o catálogo.
 
 ## Como Usar
 
-Para rodar o projeto localmente, siga os passos abaixo:
+### 1. Clonar o Repositório
 
-1. **Clonar o Repositório:**
+```bash
+git clone https://github.com/seu-usuario/devshop.git
+cd devshop
+```
 
-   
-bash
-   git clone https://github.com/seu-usuario/devshop.git
-   cd devshop
+### 2. Instalar Dependências
 
+Com `npm`:
 
-2. **Instalar Dependências:**
+```bash
+npm install
+```
 
-   Com npm:
+Com `yarn`:
 
-   
-bash
-   npm install
+```bash
+yarn install
+```
 
+### 3. Iniciar o Servidor de Desenvolvimento
 
-   Com yarn:
+Com `npm`:
 
-   
-bash
-   yarn install
+```bash
+npm start
+```
 
+Com `yarn`:
 
-3. **Iniciar o Servidor de Desenvolvimento:**
+```bash
+yarn start
+```
 
-   Com npm:
+### 4. Abrir no Navegador
 
-   
-bash
-   npm start
-
-
-   Com yarn:
-
-   
-bash
-   yarn start
-
-
-4. **Abrir no Navegador:**
-
-   Acesse a aplicação em seu navegador em [DevShop](https://devshop-seven.vercel.app).
+Acesse a aplicação em seu navegador em [DevShop](https://devshop-seven.vercel.app).
 
 ## Deploy na Vercel
 
@@ -98,15 +91,24 @@ Este projeto está hospedado na **Vercel**. Para fazer o deploy do projeto na Ve
 4. O Vercel detectará automaticamente o tipo de projeto (React) e configurará o deploy para você.
 5. Clique em **Deploy** e aguarde a publicação. Após o deploy, o link para acessar a aplicação será fornecido.
 
+## Estrutura do Projeto
+
+- **`public`**: Arquivos públicos.
+- **`src`**:
+  - **`components`**: Componentes reutilizáveis.
+  - **`contexts`**: Contexto da aplicação.
+  - **`pages`**: Páginas principais.
+  - **`services`**: Serviços da aplicação.
+
 ## Contribuição
 
 Contribuições são bem-vindas! Para contribuir com o projeto, siga os seguintes passos:
 
 1. **Fork** este repositório.
-2. Crie uma nova branch (git checkout -b minha-nova-feature).
+2. Crie uma nova branch (`git checkout -b minha-nova-feature`).
 3. Faça suas alterações e adicione testes, se necessário.
-4. **Commit** suas alterações (git commit -am 'Adiciona nova feature').
-5. **Push** para a branch (git push origin minha-nova-feature).
+4. **Commit** suas alterações (`git commit -am 'Adiciona nova feature'`).
+5. **Push** para a branch (`git push origin minha-nova-feature`).
 6. Abra um **Pull Request** explicando suas mudanças.
 
 ## Licença
@@ -117,3 +119,4 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 
 ### 📦 **Experimente a conveniência de compras online com o DevShop!**
 Explore nossa variedade de produtos e desfrute de uma experiência de compra sem complicações. 🛒🛍️
+
